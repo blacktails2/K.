@@ -1,0 +1,4 @@
+@import "source/animate";
+.changestyle{
+    @include fadeInDownBig($duration, $delay: 2s;, $function, $fill, $visibility);
+}

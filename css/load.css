@@ -1,0 +1,61 @@
+@font-face{
+    font-family: "Edwin";
+    src: url(itcedscr.ttf);
+}
+.bounceInDown{
+    animation-delay: 1.2s; 
+    -webkit-animation-delay: 1.2s; 
+}
+#changeload{ 
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+#changeload h1{
+    position: relative;
+    top: 30%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#changeload h3{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    color: #025D8C;
+    font-family: "Edwin";
+}
+.load {
+    width: 75px;
+    height: 75px;
+    -webkit-animation: spin 1.0s linear infinite;
+    -moz-animation: spin 1.0s linear infinite;
+    -ms-animation: spin 1.0s linear infinite;
+    -o-animation: spin 1.0s linear infinite;
+    animation: spin 1.0s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(-360deg);}
+}
+@-moz-keyframes spin {
+    0% {-moz-transform: rotate(0deg);}
+    100% {-moz-transform: rotate(-360deg);}
+}
+@-ms-keyframes spin {
+    0% {-ms-transform: rotate(0deg);}
+    100% {-ms-transform: rotate(-360deg);}
+}
+@-o-keyframes spin {
+    0% {-o-transform: rotate(0deg);}
+    100% {-o-transform: rotate(-360deg);}
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-360deg);}
+}

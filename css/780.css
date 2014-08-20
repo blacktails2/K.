@@ -1,0 +1,118 @@
+body{
+	padding-top: 0px;
+}
+.changestyle{
+	position: static;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	border-left: none;
+	height: 30px;
+}
+.changestyle:hover{
+	box-shadow: none;
+}
+.themeset{
+	margin-top: 8px;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+.wb{
+	margin-left: 3px;
+}
+.none{
+	display: none;
+}
+.sidebar{
+	position: static;
+}
+.title{
+	font-size: 50px;
+	width: 75px;
+	height: 75px;
+	border: solid 2px;
+	border-radius: 50%;
+	padding-left: 0px;
+	padding-top: 12px;
+	margin-top: 20px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.menus{
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 15%;
+}
+.menus h5{
+	text-align: center;
+	width: auto;
+}
+.menus h5:hover{
+	width: auto;
+}
+.menus h5:active{
+	width: auto;
+}
+.sidebar ul{
+	text-align: center;
+}
+.menu{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+.share{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.links{
+	display: inline-block;
+	float: none;
+	width: 30px;
+	height: 30px;
+}
+.link{
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+}
+#git{
+	font-size: 25px;
+	padding-left: 0px;
+	padding-top: 2px;
+}
+#hatena{
+	padding-top: 6px;
+	padding-left: 2px;
+	font-size: 15px;
+}
+#twit{
+	padding-top: 3px;
+	padding-left: 2px;
+	font-size: 20px;
+}
+#face{
+	padding-top: 4px;
+	padding-left: 1px;
+	font-size: 20px;
+}
+#line{
+	padding-top: 4px;
+	padding-left: 0px;
+	font-size: 20px;
+}
+#amazon{
+	padding-top: 4px;
+	padding-left: 1px;
+	font-size: 19px;
+}
+.nine, .columns{
+	margin-top: 60px;
+}
+.inlinecenter{
+	text-align: center;
+}

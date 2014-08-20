@@ -1,0 +1,12 @@
+.changestyle{
+	top: 0px;
+	position: absolute;
+	width: 110px;
+	height: 30px;
+}
+.none{
+	display: none;
+}
+.themeset{
+	margin-top: 7px;
+}
