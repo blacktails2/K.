@@ -110,9 +110,28 @@ body{
 	padding-left: 1px;
 	font-size: 19px;
 }
-.nine, .columns{
+.nine{
 	margin-top: 60px;
 }
 .inlinecenter{
 	text-align: center;
+}
+#pagetop{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	right: 0;
+	left: 0;
+}
+.Share{
+	text-align: center;
+}
+.Share div{
+	display: inline-block;
+}
+.none{
+	display: none;
+}
+.cont{
+	width: 50%
 }

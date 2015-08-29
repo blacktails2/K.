@@ -1,4 +1,4 @@
-@charset"utf-8";
+@charset "utf-8";
 $primaryblue: #025D8C;
 $hoverblue: #0390D8;
 $activeblue: #01334C;
@@ -16,7 +16,26 @@ $backgroundwhite: #fff;
     -o-animation: spin 1.0s linear infinite;
     animation: spin 1.0s linear infinite;
 }
-
+.icon{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	right: 0px;
+	margin-top: 15px;
+	border: $primaryblue 3px solid;
+	border-radius: 50%;
+	transition: all 0.5s ease;
+	&:hover{
+		border-color: $hoverblue;
+	}
+	&.after{
+		-webkit-transform: rotate(720deg);
+     	transform: rotate(720deg);
+	}
+	&:active{
+		border-color: $activeblue;
+	}
+}
 @-webkit-keyframes spin {
 	0% {-webkit-transform: rotate(0deg);}
 	100% {-webkit-transform: rotate(-360deg);}
@@ -41,9 +60,6 @@ $backgroundwhite: #fff;
 .cnt{
 	margin-top: 10px;
 }
-.about{
-	height: 400px;
-}
 .btns{
 	margin-bottom: 20px;
 }
@@ -56,14 +72,14 @@ $backgroundwhite: #fff;
 	margin-left: auto;
 	text-align: center;
 }
-@font-face{
+/*@font-face{
     font-family: "kozEL";
     src: url(KozGoPr6N-ExtraLight.otf);
 }
 @font-face{
     font-family: "kozL";
     src: url(KozGoPr6N-Light.otf);
-}
+}*/
 @font-face{
     font-family: "social";
     src: url(fonts/icons/WebIconFonts.otf);
@@ -76,15 +92,18 @@ $backgroundwhite: #fff;
     font-family: "entypo";
     src: url(entypo.ttf);
 }
-#num3, #num4{
-	margin-bottom: 400px;
+.social{
+	font-family: "social";
+	font-size: 13px;
+	padding-left: 9px;
+	padding-right: 0px;
 }
 h5{
 	margin-top: 3px;
 	padding-bottom: 0px !important;
 }
 body{
-	font-family: "kozL";
+	font-family: "KozGoPro-Light", "小塚ゴシック Pro L", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 	padding-top: 65px;
 	width: auto;
 }
@@ -269,6 +288,9 @@ body{
 		-webkit-transform: rotate(360deg);
     	transform: rotate(360deg);
 	}
+	&:active{
+		color: $activeblue;
+	}
 }
 .share{
 	margin-top: 5px;
@@ -376,16 +398,17 @@ h1{
 	margin-bottom: 0px;
 }
 .kodukal{
-	font-family: "kozL";
+	font-family: "KozGoPro-Light", "小塚ゴシック Pro L", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 }
 p{
-	font-family: "kozL" !important;
+	font-family: "KozGoPro-Light", "小塚ゴシック Pro L", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 }
 .index{
 	color: $primaryblue;
 	margin-top: 25px;
 	border-bottom: solid 2px;
 	padding-bottom: 2px !important;
+	margin-bottom: 10px;
 }
 .leftunderborder{
 	border-left: solid 10px $primaryblue;
@@ -397,33 +420,24 @@ p{
 	}
 }
 .contents{
-     padding-bottom:140px;
+     padding-bottom:160px;
 }
 .footter{
+	margin-top: 20px;
 	text-align: center;
-	color: black;
 }
 .footter #copywrite{
-	font-family: "kozL"
-}
-.footter #links{
-	font-family: "social";
-	font-size: 22px;
-}
-.footter #links #et{
-	margin-top: 1px !important;
-	font-family: "entypo";
-	font-size: 22px;
+	font-family: "KozGoPro-Light", "小塚ゴシック Pro L", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 }
 .tab-content{
 	text-align: left !important;
-	font-family: "kozL" !important;
+	font-family: "KozGoPro-Light", "小塚ゴシック Pro L", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 }
 #modals{
 	text-align: center;
 }
 h2{
-	font-family: "kozL" !important;
+	font-family: "KozGoPro-Light", "小塚ゴシック Pro L", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, sans-serif;
 }
 html,body{
      height:100%;
@@ -450,6 +464,9 @@ html,body{
     color: $primaryblue;
     font-family: "Edwin";
 }
+#lineQR{
+	width: 50%;
+}
 .loadtitle{
 	color: $primaryblue;
 	font-family: "Edwin" !important;
@@ -469,14 +486,157 @@ html,body{
      min-height: 100%;
 }
 #footer{
-    height:140px;
-    position:absolute;
+    height:20px;
     bottom:0;
-    width: 100%;
+}
+html,body{
+	height: 100%;
+}
+.footspace{
+	padding-bottom: 80px;
 }
 .fadeInDownBig, .fadeInLeftBig, .fadeInRightBig{
-	animation-delay: 2s; 
-	-webkit-animation-delay: 1.5s; 
+	animation-delay: 1s; 
+	-webkit-animation-delay: 1s; 
+}
+#pagetop{
+	position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: $primaryblue solid 2px;
+	border-radius: 50%;
+	transition: all 0.3s ease;
+	background-color: white;
+	&:hover{
+		border-color: $hoverblue;
+		transform: scale(1.1);
+	}
+	&:active{
+		border-color: $activeblue;
+	}
+}
+#pagetop a{
+	width: 50px;
+	height: 50px;
+}
+.upyazi{
+	width: 20px;
+	height: 20px;
+	-webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-top: $primaryblue solid 2px;
+    border-left: $primaryblue solid 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -7px;
+    transition: all 0.3s ease;
+}
+#pagetop:hover > .upyazi{
+	border-color: $hoverblue;
+}
+#pagetop:active > .upyazi{
+	border-color: $activeblue;
+}
+#hateb{
+	padding-left: 1px;
+	padding-right: 9px;
+}
+.shares{
+	color: $primaryblue;
+	border-left: 4px solid $primaryblue;
+	border-bottom: 1px solid $primaryblue;
+	padding-bottom: 3px;
+	padding-right: 5px;
+	transition: all 0.3s ease;
+	&:hover{
+		color: $hoverblue;
+		border-color: $hoverblue;
+		 box-shadow: rgb(234, 234, 234) 1px 1px,
+	    rgb(237, 237, 237) 2px 2px,
+	    rgb(239, 239, 239) 3px 3px,
+	    rgb(242, 242, 242) 4px 4px,
+	    rgb(244, 244, 244) 5px 5px,
+	    rgb(247, 247, 247) 6px 6px,
+	    rgb(249, 249, 249) 7px 7px,
+	    rgb(252, 252, 252) 8px 8px,
+	    rgb(255, 255, 255) 9px 9px;
+	}
+	&:active{
+		color: $activeblue;
+		border-color: $activeblue;
+	}
+}
+#faceshare{
+	padding-right: 10px;
+}
+#hatebu{
+	padding-right: 6px;
+}
+.minileft{
+	height: 25px;
+	color: $primaryblue;
+	padding-left: 3px;
+	width: 95px;
+	border-bottom: 1px solid $primaryblue;
+	border-left: 4px solid $primaryblue;
+	transition: all 0.3s ease;
+	&:hover{
+		color: $hoverblue;
+		border-color: $hoverblue;
+		box-shadow: rgb(234, 234, 234) 1px 1px,
+	    rgb(237, 237, 237) 2px 2px,
+	    rgb(239, 239, 239) 3px 3px,
+	    rgb(242, 242, 242) 4px 4px,
+	    rgb(244, 244, 244) 5px 5px,
+	    rgb(247, 247, 247) 6px 6px,
+	    rgb(249, 249, 249) 7px 7px,
+	    rgb(252, 252, 252) 8px 8px,
+	    rgb(255, 255, 255) 9px 9px;
+	}
+	&:active{
+		color: $activeblue;
+		border-color: $activeblue;
+	}
+}
+.contline{
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+.cont{
+	border-left: 5px solid $primaryblue;
+	border-bottom: 2px solid $primaryblue;
+	transition: all 0.3s ease;
+	&:hover{
+		border-color: $hoverblue;
+		box-shadow: rgb(234, 234, 234) 1px 1px,
+	    rgb(237, 237, 237) 2px 2px,
+	    rgb(239, 239, 239) 3px 3px,
+	    rgb(242, 242, 242) 4px 4px,
+	    rgb(244, 244, 244) 5px 5px,
+	    rgb(247, 247, 247) 6px 6px,
+	    rgb(249, 249, 249) 7px 7px,
+	    rgb(252, 252, 252) 8px 8px,
+	    rgb(255, 255, 255) 9px 9px;
+	}
+	&:active{
+		border-color: $activeblue;
+	}
+}
+.cont h5{
+	color: $primaryblue;
+	padding-left: 3px;
+	padding-bottom: 5px;
+	transition: all 0.3s ease;
+	&:hover{
+		color: $hoverblue;
+	}
+	&:active{
+		color: $activeblue;
+	}
 }
 .share{margin-left: 3% !important;}
 .btn,.drawer { margin-bottom:10px; }

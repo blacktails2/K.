@@ -3,5 +3,12 @@
 }
 .menus{
 	display: block;
-	width: 40%;
+	width: 35%;
+}
+.icon{
+	width: 100px;
+	height: 100px;
+}
+.cont{
+	width: 100%;
 }
